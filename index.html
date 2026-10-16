@@ -1,24 +1,69 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>App Support</title>
-  <meta name="description" content="Official support website for our mobile application.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mujtaba Shahbaz</title>
+
   <style>
-    body{margin:0;background:#f5f7fb;color:#202938;font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}
-    main{max-width:760px;margin:8vh auto;padding:24px}
-    article{background:#fff;border:1px solid #e4e8ef;border-radius:18px;padding:32px;box-shadow:0 8px 30px rgba(25,40,70,.06)}
-    h1{margin-top:0;font-size:2rem} p{color:#4b5563}
-    footer{margin-top:22px;color:#6b7280;font-size:.9rem}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #080c24, #142b59, #2563eb);
+      font-family: Arial, sans-serif;
+    }
+
+    .refresh-btn {
+      position: relative;
+      padding: 20px 42px;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      border-radius: 18px;
+      background: linear-gradient(135deg, #ffffff, #dbeafe);
+      color: #102653;
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      cursor: pointer;
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      overflow: hidden;
+    }
+
+    .refresh-btn:hover {
+      transform: translateY(-5px) scale(1.04);
+      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.4);
+    }
+
+    .refresh-btn:active {
+      transform: scale(0.96);
+    }
+
+    .refresh-btn:focus-visible {
+      outline: 3px solid #93c5fd;
+      outline-offset: 5px;
+    }
+
+    @media (max-width: 480px) {
+      .refresh-btn {
+        padding: 17px 30px;
+        font-size: 19px;
+      }
+    }
   </style>
 </head>
+
 <body>
-  <main><article>
-    <h1>Welcome</h1>
-    <p>This is the official website for our mobile application.</p>
-    <p>For help with the app, please use the developer contact details shown on the app's Google Play Store listing.</p>
-    <footer>App support</footer>
-  </article></main>
+  <button class="refresh-btn" onclick="window.location.reload()">
+    Mujtaba Shahbaz
+  </button>
 </body>
 </html>
